@@ -1,0 +1,13 @@
+config:
+  target: http://localhost:3000
+  http:
+    timeout: 60
+  phases:
+    - duration: 10
+      arrivalRate: 20
+scenarios:
+  - flow:
+      - get:
+          url: '/'
+          headers:
+            id: 0000-0000-0000
